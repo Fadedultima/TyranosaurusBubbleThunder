@@ -16,6 +16,7 @@ import { Component } from '@angular/core';
                 </div>
             </nav>
         </div>
+        <pm-cerebrums></pm-cerebrums>
     `
 })
 export class AppComponent { 

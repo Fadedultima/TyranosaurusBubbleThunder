@@ -12,5 +12,22 @@
                 <h3>Filtered by:{{ listFilter }}</h3>
             </div>
         </div>
+        <div class="cerebrasDiv">
+            <div *ngIf='cerebras && cerebras.length'>
+                <div id="individualCerebra" *ngFor='let cerebra of cerebras'>
+                    <label>{{ cerebra.cerebraName }}</label>
+                    <br>
+                    <label>Creator: {{ cerebra.cerebraCreator }}</label>
+                    <br>
+                    <label>Description: {{ cerebra.cerebraDescription }}</label>
+                    <br>
+                    <label>Tasks: {{ cerebra.cerebraTasks }}</label>
+                    <br>
+                    <label>Tags: S{{ cerebra.cerebraTags }}</label>
+                    <br>
+                    <label>Likes: {{ cerebra.cerebraLikes }}</label>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
