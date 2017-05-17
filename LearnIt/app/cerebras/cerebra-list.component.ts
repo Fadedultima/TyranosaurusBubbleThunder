@@ -10,7 +10,7 @@ import { ICerebra } from './cerebra';
  
 export class CerebraListComponent implements OnInit{
     pageTitle: string = 'Cerebra List';
-    listFilter: string;
+    cerebraFilter: string;
     errorMessage: string;
     cerebras: ICerebra[] = [
         {
