@@ -9,13 +9,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
+        this.pageTitle = "LearnIt Logo";
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'pm-app',
-        template: "\n        <h1>Angular2: Getting Started</h1>\n    "
+        template: "\n        <div>\n            <nav class='navbar navbar-default'>\n                <div class='container-fluid'>\n                    <a class='navbar-brand'>{{pageTitle}}</a>\n                    <ul class='nav navbar-nav'>\n                        <li><a><span class=\"glyphicon glyphicon-home\"></span> Home</a></li>\n                        <li><a><span class=\"glyphicon glyphicon-user\"></span> Profile</a></li>\n                        <li><a><span class=\"glyphicon glyphicon-plus\"></span> Create</a></li>\n                        <li><a>Login/Register</a><li>\n                    </ul>\n                </div>\n            </nav>\n        </div>\n    "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
