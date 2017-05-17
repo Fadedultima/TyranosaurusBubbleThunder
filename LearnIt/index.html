@@ -11,19 +11,24 @@
     <link href="app/app.component.css" rel="stylesheet" />
     
 <!-- Firebase API key and connection string stuff -->
-<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyC27jCPIG57MxRG2w8h8aSdSXPOUUXXnHM",
-    authDomain: "learnit-6c416.firebaseapp.com",
-    databaseURL: "https://learnit-6c416.firebaseio.com",
-    projectId: "learnit-6c416",
-    storageBucket: "learnit-6c416.appspot.com",
-    messagingSenderId: "911343383900"
-  };
-  firebase.initializeApp(config);
-</script>
+    <script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyC27jCPIG57MxRG2w8h8aSdSXPOUUXXnHM",
+        authDomain: "learnit-6c416.firebaseapp.com",
+        databaseURL: "https://learnit-6c416.firebaseio.com",
+        projectId: "learnit-6c416",
+        storageBucket: "learnit-6c416.appspot.com",
+        messagingSenderId: "911343383900"
+        };
+        firebase.initializeApp(config);
+    </script>
 
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -41,6 +46,7 @@
 
 <body>
     <pm-app></pm-app>
+    <script src="app/database/dbconnection.js"></script>
 </body>
 
 </html>
