@@ -10,25 +10,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var cerebra_service_1 = require("./cerebra.service");
-var CerebraListComponent = (function () {
-    function CerebraListComponent(_cerebraService) {
-        this._cerebraService = _cerebraService;
-        this.pageTitle = 'Cerebra List';
+var router_1 = require("@angular/router");
+var CerebraDetailComponent = (function () {
+    function CerebraDetailComponent(_route, _router) {
+        this._route = _route;
+        this._router = _router;
+        this.pageTitle = 'Cerebra Detail';
     }
-    CerebraListComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._cerebraService.getCerebras().subscribe(function (cerebras) { return _this.cerebras = cerebras; }, function (error) { return _this.errorMessage = error; });
+    CerebraDetailComponent.prototype.ngOnInit = function () {
+        var id = +this._route.snapshot.params['id'];
+        this.pageTitle += ": " + id;
     };
-    return CerebraListComponent;
+    CerebraDetailComponent.prototype.onBack = function () {
+        this._router.navigate(['/home']);
+    };
+    return CerebraDetailComponent;
 }());
-CerebraListComponent = __decorate([
+CerebraDetailComponent = __decorate([
     core_1.Component({
-        moduleId: module.id,
-        templateUrl: 'cerebra-list.component.html',
-        styleUrls: ['cerebra-list.component.css']
+        templateUrl: 'app/cerebras/cerebra-detail.component.html'
     }),
-    __metadata("design:paramtypes", [cerebra_service_1.CerebraService])
-], CerebraListComponent);
-exports.CerebraListComponent = CerebraListComponent;
-//# sourceMappingURL=cerebra-list.component.js.map
+    __metadata("design:paramtypes", [router_1.ActivatedRoute, router_1.Router])
+], CerebraDetailComponent);
+exports.CerebraDetailComponent = CerebraDetailComponent;
+//# sourceMappingURL=cerebra-detail.component.js.map

@@ -1,33 +1,26 @@
-<div class="panel panel-primary">
-    <div class="panel-heading">{{ pageTitle }}</div>
-    <div class="panel-body">
-        <div class="row">
-            <div class="col-md-2">Filter by:</div>
-            <div class="col-md-4">
-                <input type="text" [(ngModel)]='listFilter'/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Filtered by:{{ listFilter }}</h3>
-            </div>
-        </div>
-        <div class="cerebrasDiv">
-            <div *ngIf='cerebras && cerebras.length'>
-                <div id="individualCerebra" *ngFor='let cerebra of cerebras'>
-                    <label>{{ cerebra.cerebraName }}</label>
-                    <br>
-                    <label>Creator: {{ cerebra.cerebraCreator }}</label>
-                    <br>
-                    <label>Description: {{ cerebra.cerebraDescription }}</label>
-                    <br>
-                    <label>Tasks: {{ cerebra.cerebraTasks }}</label>
-                    <br>
-                    <label>Tags: S{{ cerebra.cerebraTags }}</label>
-                    <br>
-                    <label>Likes: {{ cerebra.cerebraLikes }}</label>
+<div id="containCerebraList">
+    <div class="panel panel-primary">
+        <div class="panel-heading">{{ pageTitle }}</div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-2">Filter by:</div>
+                <div class="col-md-4">
+                    <input type="text" [(ngModel)]='listFilter'/>
                 </div>
             </div>
+            <br>
+                <div class="cerebrasDiv">
+                    <div *ngIf='cerebras && cerebras.length'>
+                        <div id="individualCerebra" *ngFor='let cerebra of cerebras | cerebraFilter:listFilter'>
+                            <a [routerLink]="['/cerebra', cerebra.cerebraId]">
+                            <h4>{{ cerebra.cerebraName }}</h4>
+                            <h5>Creator: {{ cerebra.cerebraCreator }}</h5>
+                            <h5>Tags: {{ cerebra.cerebraTags }}</h5>
+                            <h5>Likes: {{ cerebra.cerebraLikes }}</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </div>

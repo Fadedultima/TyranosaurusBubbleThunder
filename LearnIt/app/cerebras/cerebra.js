@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Cerebra = (function () {
-    function Cerebra(cerebraName, cerebraCreator, cerebraDescription, cerebraTasks, cerebraSubtasks, cerebraTags, cerebraLikes) {
+    function Cerebra(cerebraId, cerebraName, cerebraCreator, cerebraDescription, cerebraTasks, cerebraSubtasks, cerebraTags, cerebraLikes) {
+        this.cerebraId = cerebraId;
         this.cerebraName = cerebraName;
         this.cerebraCreator = cerebraCreator;
         this.cerebraDescription = cerebraDescription;
