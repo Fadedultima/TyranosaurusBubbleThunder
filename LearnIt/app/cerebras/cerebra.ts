@@ -17,6 +17,6 @@ export class Cerebra implements ICerebra {
         public cerebraTags: string,
         public cerebraLikes: number
     ){
-            
+			
     }
 }
