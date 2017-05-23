@@ -10,25 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var cerebra_service_1 = require("./cerebra.service");
-var CerebraListComponent = (function () {
-    function CerebraListComponent(_cerebraService) {
-        this._cerebraService = _cerebraService;
-        this.pageTitle = 'Cerebra List';
+var CreateCerebraComponent = (function () {
+    function CreateCerebraComponent() {
+        this.pageTitle = 'Create Cerebra';
     }
-    CerebraListComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this._cerebraService.getCerebras().subscribe(function (cerebras) { return _this.cerebras = cerebras; }, function (error) { return _this.errorMessage = error; });
+    CreateCerebraComponent.prototype.ngOnInit = function () {
     };
-    return CerebraListComponent;
+    return CreateCerebraComponent;
 }());
-CerebraListComponent = __decorate([
+CreateCerebraComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        templateUrl: 'cerebra-list.component.html',
-        styleUrls: ['cerebra-list.component.css']
+        templateUrl: 'create-cerebra.component.html',
+        styleUrls: ['create-cerebra.component.css']
     }),
-    __metadata("design:paramtypes", [cerebra_service_1.CerebraService])
-], CerebraListComponent);
-exports.CerebraListComponent = CerebraListComponent;
-//# sourceMappingURL=cerebra-list.component.js.map
+    __metadata("design:paramtypes", [])
+], CreateCerebraComponent);
+exports.CreateCerebraComponent = CreateCerebraComponent;
+//# sourceMappingURL=create-cerebra.component.js.map

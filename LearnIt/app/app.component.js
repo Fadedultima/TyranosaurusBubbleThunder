@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var cerebra_service_1 = require("./cerebras/cerebra.service");
 var AppComponent = (function () {
     function AppComponent() {
         this.pageTitle = "LearnIt Logo";
@@ -15,8 +16,9 @@ var AppComponent = (function () {
 }());
 AppComponent = __decorate([
     core_1.Component({
-        selector: 'pm-app',
-        template: "\n        <div>\n            <nav class='navbar navbar-default'>\n                <div class='container-fluid'>\n                    <a class='navbar-brand'>{{pageTitle}}</a>\n                    <ul class='nav navbar-nav'>\n                        <li><a><span class=\"glyphicon glyphicon-home\"></span> Home</a></li>\n                        <li><a><span class=\"glyphicon glyphicon-user\"></span> Profile</a></li>\n                        <li><a><span class=\"glyphicon glyphicon-plus\"></span> Create</a></li>\n                        <li><a>Login/Register</a><li>\n                    </ul>\n                </div>\n            </nav>\n        </div>\n        <pm-cerebrums></pm-cerebrums>\n    "
+        selector: 'cl-app',
+        template: "\n        <div>\n            <nav class='navbar navbar-default'>\n                <div class='container-fluid'>\n                    <a class='navbar-brand'>{{pageTitle}}</a>\n                    <ul class='nav navbar-nav'>\n                        <li><a [routerLink]=\"['/home']\"><span class=\"glyphicon glyphicon-home\"></span> Home</a></li>\n                        <li><a [routerLink]=\"['/profile']\"><span class=\"glyphicon glyphicon-user\"></span> Profile</a></li>\n                        <li><a [routerLink]=\"['/create']\"><span class=\"glyphicon glyphicon-plus\"></span> Create Cerebra</a></li>\n                        <li><a>Login/Register</a><li>\n                    </ul>\n                </div>\n            </nav>\n            <div class=\"container\">\n                <router-outlet></router-outlet>\n            </div>\n        </div>\n        \n    ",
+        providers: [cerebra_service_1.CerebraService]
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

@@ -1,4 +1,5 @@
 export interface ICerebra {
+    cerebraId: number;
     cerebraName: string;
     cerebraCreator: string;
     cerebraDescription: string;
@@ -9,6 +10,7 @@ export interface ICerebra {
 
 export class Cerebra implements ICerebra {
     constructor(
+        public cerebraId: number,
         public cerebraName: string,
         public cerebraCreator: string,
         public cerebraDescription: string,

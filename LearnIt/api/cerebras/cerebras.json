@@ -1,0 +1,127 @@
+ [   
+    {
+        "cerebraId": 1,
+        "cerebraName": "Learn to Play Guitar",
+        "cerebraCreator": "Daniel",
+        "cerebraDescription": "This will be a cerebra created to teach the fundamentals of learning guitar",
+        "cerebraTasks": "Here is the first task",
+        "cerebraTags": "learnGuitar",
+        "cerebraLikes": 25
+    },
+    {
+        "cerebraId": 2,
+        "cerebraName": "Learn to Play Guitar",
+        "cerebraCreator": "Daniel",
+        "cerebraDescription": "This will be a cerebra created to teach the fundamentals of learning guitar",
+        "cerebraTasks": "Here is the first task",
+        "cerebraTags": "learnGuitar",
+        "cerebraLikes": 25
+    },
+    {
+        "cerebraId": 3,
+        "cerebraName": "Learn to Play Guitar",
+        "cerebraCreator": "Daniel",
+        "cerebraDescription": "This will be a cerebra created to teach the fundamentals of learning guitar",
+        "cerebraTasks": "Here is the first task",
+        "cerebraTags": "learnGuitar",
+        "cerebraLikes": 25
+    },
+    {
+        "cerebraId": 4,
+        "cerebraName": "Learn to Play Guitar",
+        "cerebraCreator": "Daniel",
+        "cerebraDescription": "This will be a cerebra created to teach the fundamentals of learning guitar",
+        "cerebraTasks": "Here is the first task",
+        "cerebraTags": "learnGuitar",
+        "cerebraLikes": 25
+    },
+    {
+        "cerebraId": 5,
+        "cerebraName": "Learn to Play Guitar",
+        "cerebraCreator": "Daniel",
+        "cerebraDescription": "This will be a cerebra created to teach the fundamentals of learning guitar",
+        "cerebraTasks": "Here is the first task",
+        "cerebraTags": "learnGuitar",
+        "cerebraLikes": 25
+    },
+    {
+        "cerebraId": 6,
+        "cerebraName": "Learn to Play Guitar",
+        "cerebraCreator": "Daniel",
+        "cerebraDescription": "This will be a cerebra created to teach the fundamentals of learning guitar",
+        "cerebraTasks": "Here is the first task",
+        "cerebraTags": "learnGuitar",
+        "cerebraLikes": 25
+    },
+    {
+        "cerebraId": 7,
+        "cerebraName": "Learn to Play Guitar",
+        "cerebraCreator": "Daniel",
+        "cerebraDescription": "This will be a cerebra created to teach the fundamentals of learning guitar",
+        "cerebraTasks": "Here is the first task",
+        "cerebraTags": "learnGuitar",
+        "cerebraLikes": 25
+    },{
+            "cerebraId": 8,
+            "cerebraName": "Learn to Play Guitar",
+            "cerebraCreator": "Daniel",
+            "cerebraDescription": "This will be a cerebra created to teach the fundamentals of learning guitar",
+            "cerebraTasks": "Here is the first task",
+            "cerebraTags": "learnGuitar",
+            "cerebraLikes": 25
+        },
+        {
+            "cerebraId": 9,
+            "cerebraName": "Learn to cook Chicken",
+            "cerebraCreator": "Quintyn",
+            "cerebraDescription": "This will be a cerebra created to teach you the basics in cuisine regarding chicken breasts",
+            "cerebraTasks": "Here is the first task",
+            "cerebraTags": "cookChicken",
+            "cerebraLikes": 35
+        },
+        {
+            "cerebraId": 10,
+            "cerebraName": "Learn to cook Chicken",
+            "cerebraCreator": "Quintyn",
+            "cerebraDescription": "This will be a cerebra created to teach you the basics in cuisine regarding chicken breasts",
+            "cerebraTasks": "Here is the first task",
+            "cerebraTags": "cookChicken",
+            "cerebraLikes": 35
+        },
+        {
+            "cerebraId": 11,
+            "cerebraName": "Learn to cook Chicken",
+            "cerebraCreator": "Quintyn",
+            "cerebraDescription": "This will be a cerebra created to teach you the basics in cuisine regarding chicken breasts",
+            "cerebraTasks": "Here is the first task",
+            "cerebraTags": "cookChicken",
+            "cerebraLikes": 35
+        },
+        {
+            "cerebraId": 12,
+            "cerebraName": "Learn to cook Chicken",
+            "cerebraCreator": "Quintyn",
+            "cerebraDescription": "This will be a cerebra created to teach you the basics in cuisine regarding chicken breasts",
+            "cerebraTasks": "Here is the first task",
+            "cerebraTags": "cookChicken",
+            "cerebraLikes": 35
+        },
+        {
+            "cerebraId": 13,
+            "cerebraName": "Learn to cook Chicken",
+            "cerebraCreator": "Quintyn",
+            "cerebraDescription": "This will be a cerebra created to teach you the basics in cuisine regarding chicken breasts",
+            "cerebraTasks": "Here is the first task",
+            "cerebraTags": "cookChicken",
+            "cerebraLikes": 35
+        },
+        {
+            "cerebraId": 14,
+            "cerebraName": "Hit a Home Run",
+            "cerebraCreator": "Alexander",
+            "cerebraDescription": "This will be a cerebra created to teach you the basics of hitting a softball over the fence",
+            "cerebraTasks": "Here is the first task",
+            "cerebraTags": "softball",
+            "cerebraLikes": 45
+        }
+]
