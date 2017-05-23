@@ -21,4 +21,9 @@ export class CerebraService {
             .do(data => console.log('All: ' +  JSON.stringify(data)));
     }
 
+    getCerebra(id: number): Observable<ICerebra> {
+        return this.getCerebras()
+            .map((cerebras: ICerebra[]) => cerebras.find(p => p.cerebraId === id));
+    }
+
 }

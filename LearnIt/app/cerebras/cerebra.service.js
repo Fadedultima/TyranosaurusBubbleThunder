@@ -24,6 +24,10 @@ var CerebraService = (function () {
             .map(function (response) { return response.json(); })
             .do(function (data) { return console.log('All: ' + JSON.stringify(data)); });
     };
+    CerebraService.prototype.getCerebra = function (id) {
+        return this.getCerebras()
+            .map(function (cerebras) { return cerebras.find(function (p) { return p.cerebraId === id; }); });
+    };
     return CerebraService;
 }());
 CerebraService = __decorate([

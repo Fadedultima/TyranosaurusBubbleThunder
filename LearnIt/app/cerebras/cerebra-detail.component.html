@@ -1,6 +1,36 @@
-<div id="containCerebraDetail">
+<div id="containCerebraDetail" *ngIf='cerebra'>
     <div class="panel panel-primary">
-        <div class="panel-heading">{{ pageTitle }}</div>
+        <div class="panel-heading">{{cerebra.cerebraName}}</div>
+        <div class='panel-body'>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <div class='row'>
+                        <div class='col-md-2'>Creator:</div>
+                        <div class='col-md-10'>{{cerebra.cerebraCreator}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-2'>Id:</div>
+                        <div class='col-md-10'>{{cerebra.cerebraId}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-2'>Description:</div>
+                        <div class='col-md-10'>{{cerebra.cerebraDescription}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-2'>Tasks:</div>
+                        <div class='col-md-10'>{{cerebra.cerebraTasks}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-2'>Tags:</div>
+                        <div class='col-md-10'>{{cerebra.cerebraTags}}</div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-md-2'>Likes:</div>
+                        <div class='col-md-10'>{{cerebra.cerebraLikes}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <div class="panel-footer">
             <a class="btn btn-default" (click)='onBack()'>
