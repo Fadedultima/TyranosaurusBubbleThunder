@@ -10,11 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var cerebra_service_1 = require("./cerebra.service");
 var CreateCerebraComponent = (function () {
-    function CreateCerebraComponent() {
+    function CreateCerebraComponent(_cerebraService) {
+        this._cerebraService = _cerebraService;
         this.pageTitle = 'Create Cerebra';
     }
     CreateCerebraComponent.prototype.ngOnInit = function () {
+    };
+    CreateCerebraComponent.prototype.createNewCerebra = function () {
+        console.log("Cerebra Name: " + this.cerebra.cerebraName);
+    };
+    CreateCerebraComponent.prototype.getNewCerebra = function () {
     };
     return CreateCerebraComponent;
 }());
@@ -24,7 +31,17 @@ CreateCerebraComponent = __decorate([
         templateUrl: 'create-cerebra.component.html',
         styleUrls: ['create-cerebra.component.css']
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [cerebra_service_1.CerebraService])
 ], CreateCerebraComponent);
 exports.CreateCerebraComponent = CreateCerebraComponent;
+//creator
+//description
+//array of tasks
+//lists node
+//generate random id
+//favorite value is set to 0
+//timestamp set to current time
+//console.log( "Cerebra Description: " + this.cerebraDescription);
+//        console.log( "Cerebra Tasks: " + this.cerebraTasks);
+//        console.log( "Cerebra Tags: " + this.cerebraTags);
 //# sourceMappingURL=create-cerebra.component.js.map

@@ -1,6 +1,39 @@
 <div id="containCreateCerebra">
     <div class="panel panel-primary">
         <div class="panel-heading">{{ pageTitle }}</div>
-        <div class="panel-body"></div>
+        <div class="panel-body">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="cerebraName">Cerebra Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cerebraNameInput" [(ngModel)]='cerebraName' name="cerebraName" placeholder="Enter Cerebra Name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="cerebraDescription">Description:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cerebraDescriptionInput" [(ngModel)]="cerebraDescription" name="cerebraDescription" placeholder="Enter Description" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="cerebraTasks">Tasks:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cerebraTasksInput" [(ngModel)]="cerebraTasks" name="cerebraTasks" placeholder="Enter Tasks" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="cerebraTags">Tags:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="cerebraTagsInput" [(ngModel)]="cerebraTags" name="cerebraTags" placeholder="Enter Tags" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success" (click)="createNewCerebra()">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
