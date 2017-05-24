@@ -1,6 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
 
 import { CerebraService } from './cerebras/cerebra.service';
+
+import * as firebase from 'firebase';
+
+const unsubscribe = firebase.auth().onAuthStateChanged((user:any) => {
+	this.zone.run( () => {
+		if (!user) {
+		  this.rootPage = 'login';
+		  unsubscribe();
+		} else { 
+		  this.rootPage = 'home';
+		  unsubscribe();
+		}
+	});     
+});
 
 @Component({
     selector: 'cl-app',
@@ -25,6 +39,14 @@ import { CerebraService } from './cerebras/cerebra.service';
     `,
     providers: [ CerebraService ]
 })
-export class AppComponent { 
+export class AppComponent {
     pageTitle: string = `LearnIt Logo`;
+	rootPage: any;
+	zone: NgZone;
+	
+	constructor(){
+		this.zone = new NgZone({});
+	}
+	
+	
 }
