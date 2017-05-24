@@ -15,6 +15,7 @@ var app_component_1 = require("./app.component");
 var cerebra_list_component_1 = require("./cerebras/cerebra-list.component");
 var cerebra_detail_component_1 = require("./cerebras/cerebra-detail.component");
 var create_cerebra_component_1 = require("./cerebras/create-cerebra.component");
+var login_component_1 = require("./security/login.component");
 var profile_component_1 = require("./profile/profile.component");
 var cerebra_filter_pipe_1 = require("./cerebras/cerebra-filter.pipe");
 var cerebra_guard_service_1 = require("./cerebras/cerebra-guard.service");
@@ -34,11 +35,12 @@ AppModule = __decorate([
                 { path: 'cerebra/:id', canActivate: [cerebra_guard_service_1.CerebraDetailGuard], component: cerebra_detail_component_1.CerebraDetailComponent },
                 { path: 'create', component: create_cerebra_component_1.CreateCerebraComponent },
                 { path: 'profile', component: profile_component_1.ProfileComponent },
+                { path: 'login', component: login_component_1.LoginComponent },
                 { path: '', redirectTo: 'home', pathMatch: 'full' },
                 { path: '**', redirectTo: 'home', pathMatch: 'full' }
             ])
         ],
-        declarations: [app_component_1.AppComponent, cerebra_list_component_1.CerebraListComponent, cerebra_filter_pipe_1.CerebraFilterPipe, cerebra_detail_component_1.CerebraDetailComponent, create_cerebra_component_1.CreateCerebraComponent, profile_component_1.ProfileComponent],
+        declarations: [app_component_1.AppComponent, cerebra_list_component_1.CerebraListComponent, cerebra_filter_pipe_1.CerebraFilterPipe, cerebra_detail_component_1.CerebraDetailComponent, create_cerebra_component_1.CreateCerebraComponent, profile_component_1.ProfileComponent, login_component_1.LoginComponent],
         providers: [cerebra_guard_service_1.CerebraDetailGuard],
         bootstrap: [app_component_1.AppComponent]
     })

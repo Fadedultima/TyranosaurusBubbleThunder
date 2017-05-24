@@ -27,7 +27,7 @@ const unsubscribe = firebase.auth().onAuthStateChanged((user:any) => {
                         <li><a [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                         <li><a [routerLink]="['/profile']"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
                         <li><a [routerLink]="['/create']"><span class="glyphicon glyphicon-plus"></span> Create Cerebra</a></li>
-                        <li><a>Login/Register</a><li>
+                        <li><a [routerLink]="['/login']">Login/Register</a><li>
                     </ul>
                 </div>
             </nav>
@@ -40,7 +40,7 @@ const unsubscribe = firebase.auth().onAuthStateChanged((user:any) => {
     providers: [ CerebraService ]
 })
 export class AppComponent {
-    pageTitle: string = `LearnIt Logo`;
+    pageTitle: string = `Cerebrum Logo`;
 	rootPage: any;
 	zone: NgZone;
 	
