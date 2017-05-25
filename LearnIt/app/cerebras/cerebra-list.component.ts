@@ -7,7 +7,7 @@ import { CerebraService } from './cerebra.service';
     templateUrl: 'cerebra-list.component.html',
     styleUrls: ['cerebra-list.component.css']
 })
- 
+
 export class CerebraListComponent implements OnInit{
     pageTitle: string = 'Cerebra List';
     listFilter: string;
